@@ -1,11 +1,22 @@
-import React from 'react'
-import styles from "@/app/page.module.css"
-const page = () => {
+"use client"
+import React ,{useEffect} from 'react'
+import Home from "@/app/Home/page"
+const Page = () => {
+  useEffect( () => {
+    (
+      async () => {
+          const LocomotiveScroll = (await import('locomotive-scroll')).default
+          const locomotiveScroll = new LocomotiveScroll();
+      }
+    )()
+  }, [])
+
+
   return (
     <div>
-      <h1 className={styles.testing}>Interiormaata</h1>
+    <Home/>
     </div>
   )
 }
 
-export default page
+export default Page

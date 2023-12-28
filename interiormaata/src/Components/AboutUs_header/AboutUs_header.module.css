@@ -1,0 +1,44 @@
+
+.aboutUsHeader {
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+.ananya {
+  color: #7f7047;
+  font-family: Roseritta;
+  font-size: 120.669px;
+  font-style: normal;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 400;
+  line-height: 120px;
+  /* letter-spacing: 2.413px; */
+  text-transform: uppercase;
+}
+
+.aboutUs_flex_divider {
+  display: flex;
+  width: 41%;
+  gap: 2rem;
+  margin: 0px 38rem;
+}
+
+.aboutUs_buttonOuter {
+  margin-top: 1rem;
+}
+
+.aboutUs_banner_text_outer {
+  margin-top: 2rem;
+}
+
+.aboutUs_banner_text {
+  color: #cc7d45;
+  font-family: Neue Montreal;
+  font-size: 15.616px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  text-transform: capitalize;
+}

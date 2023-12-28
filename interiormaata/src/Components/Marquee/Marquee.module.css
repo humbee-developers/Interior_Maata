@@ -1,0 +1,16 @@
+.marquee_text {
+  font-size: 65px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #CCC;
+  font-family: Roseritta;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0%;
+  text-transform: uppercase;
+}
+
+.main_marquee {
+  padding-top: 5rem;
+}

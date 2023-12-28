@@ -89,7 +89,7 @@ a {
 
 
 
-@font-face {
+/* @font-face {
   font-family: 'Roseritta';
   src: url('/interiormaata/src/fonts/Roseritta.ttf') format('truetype');
   font-weight: 400;
@@ -102,10 +102,41 @@ a {
   src: url('../../src/fonts/Roseritta.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
+} */
+
+
+
+
+@font-face {
+  font-family: "Roseritta";
+  src: local("Roseritta"),
+    url("/interiormaata/src/fonts/Roseritta.otf") format("truetype");
+  font-weight: normal;
 }
-
-
-
+@font-face {
+  font-family: "Neue Montreal";
+  src: local("Neue Montreal"),
+    url("/interiormaata/src/fonts/NeueMontreal-Regular.otf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Neue Montreal Light";
+  src: local("Neue Montreal Light"),
+    url("/interiormaata/src/fonts/NeueMontreal-Light.otf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Neue Montreal Bold";
+  src: local("Neue Montreal Bold"),
+    url("/interiormaata/src/fonts/NeueMontreal-Bold.otf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Saturday Lovin";
+  src: local("Saturday Lovin"),
+    url("/interiormaata/src/fonts/Saturday\ Lovin.otf") format("truetype");
+  font-weight: normal;
+}
 
 
 
