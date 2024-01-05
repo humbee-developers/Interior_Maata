@@ -10,7 +10,7 @@
 }
 
 .landing_page_second_content_text {
-  width: 62%;
+  width: 100%;
   color: #7f7047;
   font-family: Roseritta;
   font-size: 58px;
@@ -33,6 +33,7 @@
 
 .overlay_text {
   position: absolute;
+  text-align: center;
   top: 50%;
   left: 50%;
   width: 100%;
@@ -43,18 +44,42 @@
   position: relative;
 }
 
-.Landing_image1:hover{
-  opacity: 0;
+.Landing_image1:hover {
+  display: block;
+  background-image: url(../../images//AboutUs_Quality_image.png);
+  background-repeat: no-repeat;
+  transition: all 0.5s;
 }
+.Landing_image2 {
+    position: relative;
+  }
+  
+  .Landing_image2:hover {
+    display: block;
+    background-image: url(../../images//AboutUs_Architectural\ _image.png);
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+  }
+
+  .Landing_image3 {
+    position: relative;
+  }
+  
+  .Landing_image3:hover {
+    display: block;
+    background-image: url(../../images//AboutUs_Quality_image.png);
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+  }
+
 
 .overlay_text_content {
   color: #000;
-  font-family: Neue Montreal Light;
+  font-family: Neue Montreal;
   font-size: 27px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -65,6 +90,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
- text-align: center;
+  letter-spacing: 0.54px;
   text-transform: uppercase;
 }

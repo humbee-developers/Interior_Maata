@@ -4,6 +4,8 @@ import AboutUs_header from "@/Components/AboutUs_header/page"
 import AboutUs_threeCards from "@/Components/AboutUs_threeCards/page"
 import Marquee from "@/Components/Marquee/page"
 import AboutUs_Carousal from "@/Components/AboutUs_Carousal/page"
+import AboutUs_flex from "@/Components/AboutUs_flex/page"
+import AboutUsInfo from "@/Components/AboutUsInfo/page"
 const page = () => {
   useEffect( () => {
     (
@@ -19,6 +21,8 @@ const page = () => {
       <AboutUs_threeCards/>
       <Marquee/>
       <AboutUs_Carousal/>
+      <AboutUs_flex/>
+      <AboutUsInfo/>
     </div>
   )
 }

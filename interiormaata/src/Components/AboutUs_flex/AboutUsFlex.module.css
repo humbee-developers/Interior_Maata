@@ -1,0 +1,83 @@
+.forth_Section_container {
+      display: flex;
+  }
+  
+  .forth_Section_content {
+      display: flex;
+      color: white;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      background: #CC7D45;
+  }
+
+
+  .forth_Section_content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background: #C0C2AA;
+}
+  
+  .forth_Section_image {
+      width: 50%;
+  }           
+  
+  .forth_Section_execution {
+      /* color: #FFF; */
+      font-family: Roseritta;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+  }
+  
+  .forth_section_third,
+  .forth_section_first {
+      /* color: #FFF; */
+      text-align: center;
+      font-size: 30px;
+      font-family: Neue Montreal;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+  }
+  
+  .forth_section_third {
+      font-size: 18px;
+      padding-top: 1rem;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+  }
+  
+  .forth_section_first {
+      font-size: 30px;
+      text-transform: uppercase;
+  }
+  
+  .forth_Section_img {
+      width: 100%;
+     height: auto;
+     display: block;
+  }
+  
+  .forth_content_button {
+      padding-top: 1rem;
+  }
+  
+  .forth_section_button {
+      outline: none;
+      background: transparent;
+      cursor: pointer;
+      color: #FFF;
+      font-family: Neue Montreal;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: capitalize;
+      border: 1px solid white;
+      padding: 12px;
+  }

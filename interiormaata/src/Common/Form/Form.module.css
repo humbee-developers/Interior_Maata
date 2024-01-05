@@ -1,0 +1,147 @@
+.Contact_form_section {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.contact_form {
+  width: 50%;
+  padding: 4rem 9rem 5rem 9rem;
+  justify-content: center;
+  align-items: center;
+  background: #7f7047;
+}
+
+.contact_form_title {
+  color: #fff;
+  font-family: Neue Montreal;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  padding-bottom: 3rem;
+}
+
+.field label {
+  color: #fff;
+  font-family: Neue Montreal;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.contact_us_image {
+  width: 50%;
+}
+
+.field {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.Submit_button_outer{
+  margin-top: -15px;
+}
+
+
+.field input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #d1d1d1;
+  /* padding-top: 1rem; */
+  width: 100%;
+  /* font-family: lato; */
+  height: 30px;
+  margin-bottom: 6px;
+  font-size: 15px;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.field_Address {
+  padding-top: 0.3rem;
+  background-color: transparent;
+  font-size: 17px;
+  resize: none;
+  color: white;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #d1d1d1;
+}
+.field input:focus {
+  outline: none;
+}
+.dropdown_menu {
+  color: white;
+  font-size: 17px;
+  color: #fff;
+  font-family: Neue Montreal;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #d1d1d1;
+}
+.p-dropdown-item {
+  color: white;
+  font-family: Neue Montreal;
+  padding: 8px;
+  background-color: #7f7047;
+  font-size: 17px;
+}
+p.error {
+  color: red;
+  font-size: 15px;
+  margin: 0;
+}
+
+.contact_img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  max-width: 100%;
+}
+
+.Submit_button {
+  color: #000;
+  background: #c0c2aa;
+  font-family: Neue Montreal;
+  font-size: 20px;
+  font-style: normal;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  float: right;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  padding: 20px 80px 20px 80px;
+}
+.field_Select {
+  background-color: transparent;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .Contact_form_section {
+    flex-direction: column;
+  }
+
+  .contact_form,
+  .contact_us_image {
+    width: 100%;
+  }
+
+  .Submit_button {
+    float: none;
+  }
+}
