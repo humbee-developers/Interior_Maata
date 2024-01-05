@@ -86,7 +86,7 @@ const Page = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className={styles.forth_Section_execution}
           >
-            Execution
+            Consultancy
           </motion.p>
 
           <motion.p

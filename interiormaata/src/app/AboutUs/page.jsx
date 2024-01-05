@@ -6,6 +6,7 @@ import Marquee from "@/Components/Marquee/page"
 import AboutUs_Carousal from "@/Components/AboutUs_Carousal/page"
 import AboutUs_flex from "@/Components/AboutUs_flex/page"
 import AboutUsInfo from "@/Components/AboutUsInfo/page"
+import AboutUs_ourDesign from "@/Components/AboutUs_ourDesign/page"
 const page = () => {
   useEffect( () => {
     (
@@ -23,6 +24,7 @@ const page = () => {
       <AboutUs_Carousal/>
       <AboutUs_flex/>
       <AboutUsInfo/>
+      <AboutUs_ourDesign/>
     </div>
   )
 }

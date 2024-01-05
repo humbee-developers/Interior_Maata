@@ -1,0 +1,163 @@
+.seventh_Section_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 10rem 5rem 10rem;
+  position: relative;
+}
+
+.ourDesign_outer {
+  padding: 5rem 5rem;
+}
+
+.seventh_Section_content_text {
+  color: #7f7047;
+  font-family: Roseritta;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.16px;
+  text-transform: uppercase;
+}
+
+.seventh_Section_content_text1 {
+  color: #000;
+  font-family: "NeueMontreal-Regular";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.table_Section {
+  /* max-width: 1440px; */
+  padding: 0 116px;
+  /* margin: 0 auto; */
+}
+
+.table_content {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.ourDesign_icons {
+  width: 10%;
+  display: block;
+}
+.table_content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  background-color: #cc7d45;
+  transition: width 0.2s ease;
+  transition-duration: 1s;
+}
+
+.table_content:hover::before {
+  width: 100%;
+}
+
+.table_content:nth-child(n) {
+  border-top: 1px solid #cc7d45;
+}
+.table_content:nth-last-child(1) {
+  border-bottom: 1px solid #cc7d45;
+}
+.table_section_content {
+  padding-left: 1rem;
+}
+.table_Section_emphasis {
+  color: #000;
+  padding-bottom: 4px;
+  font-family: "NeueMontreal-Regular";
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
+  text-transform: capitalize;
+}
+
+.table_content_emphasis {
+  color: #9e9e9e;
+  font-family: "NeueMontreal-Regular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+}
+
+.Crafting_Section {
+  display: flex;
+  padding-left: 5rem;
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+}
+
+.Crafting_Section_Image {
+  display: flex;
+}
+
+.Crafting_section_img {
+  display: block;
+}
+.Crafting_Section_Content_Text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-right: 25rem;
+}
+.Crafting_Section_Content {
+  background: #c0c2aa;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.Crafting_Section_Left {
+  color: #000;
+  font-family: "NeueMontreal-Regular";
+  font-size: 41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.82px;
+  text-transform: capitalize;
+}
+
+.Crafting_Section_Right {
+  color: #000;
+  font-family: "NeueMontreal-Regular";
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 1800px) {
+  .seventh_Section_container {
+    padding: 0rem 10rem 5rem 10rem;
+  }
+
+
+
+  .ourDesign_icons {
+      width: 7%;
+      display: block;
+    }
+}

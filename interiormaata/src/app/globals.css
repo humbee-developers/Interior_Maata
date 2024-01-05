@@ -116,28 +116,28 @@ a {
   font-weight: normal;
 }
 @font-face {
-  font-family: "Neue Montreal";
-  src: local("Neue Montreal"),
-    url("/interiormaata/src/fonts/NeueMontreal-Regular.otf") format("truetype");
-  font-weight: normal;
+  font-family: "NeueMontreal-Regular";
+  src: local("NeueMontreal-Regular"),
+    url("../fonts/NeueMontreal-Regular.otf") format("truetype");
+ 
 }
 @font-face {
-  font-family: "Neue Montreal Light";
-  src: local("Neue Montreal Light"),
-    url("/interiormaata/src/fonts/NeueMontreal-Light.otf") format("truetype");
-  font-weight: normal;
+  font-family: "NeueMontreal-Light";
+  src: local("NeueMontreal-Light"),
+    url("../fonts/NeueMontreal-Light.otf") format("truetype");
+  
 }
 @font-face {
-  font-family: "Neue Montreal Bold";
-  src: local("Neue Montreal Bold"),
-    url("/interiormaata/src/fonts/NeueMontreal-Bold.otf") format("truetype");
-  font-weight: normal;
+  font-family: "NeueMontreal-Bold";
+  src: local("NeueMontreal-Bold"),
+  url("../fonts/NeueMontreal-Bold.otf") format("truetype");
+  
 }
 @font-face {
   font-family: "Saturday Lovin";
   src: local("Saturday Lovin"),
-    url("/interiormaata/src/fonts/Saturday\ Lovin.otf") format("truetype");
-  font-weight: normal;
+  url("../fonts/Saturday\ Lovin.otf") format("truetype");
+  
 }
 
 

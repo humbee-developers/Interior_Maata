@@ -41,7 +41,7 @@
       /* color: #FFF; */
       text-align: center;
       font-size: 30px;
-      font-family: Neue Montreal;
+      font-family: "NeueMontreal-Regular";
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -67,17 +67,4 @@
   
   .forth_content_button {
       padding-top: 1rem;
-  }
-  
-  .forth_section_button {
-      outline: none;
-      background: transparent;
-      cursor: pointer;
-      color: #FFF;
-      font-family: Neue Montreal;
-      font-size: 16px;
-      font-weight: 400;
-      text-transform: capitalize;
-      border: 1px solid white;
-      padding: 12px;
   }
