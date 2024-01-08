@@ -8,16 +8,20 @@ import Button from "@/Assets/Buttons/Button2";
 import Button3 from "@/Assets/Buttons/Button3";
 import styles from "@/Components/AboutUs_flex/AboutUsFlex.module.css";
 const Page = () => {
-  const [ref, inView] = useInView({
+  const [ref1, inView1] = useInView({
+    triggerOnce: true, // Only trigger once
+  });
+
+  const [ref2, inView2] = useInView({
     triggerOnce: true, // Only trigger once
   });
   return (
     <div>
-      <div className={styles.forth_Section_container} ref={ref}>
+      <div className={styles.forth_Section_container} ref={ref1}>
         <div className={styles.forth_Section_content}>
           <motion.p
             initial={{ opacity: 0, y: 50 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={inView1 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.2, delay: 0.2 }}
             className={styles.forth_section_first}
           >
@@ -26,7 +30,7 @@ const Page = () => {
 
           <motion.p
             initial={{ opacity: 0, y: 50 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={inView1 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.3, delay: 0.3 }}
             className={styles.forth_Section_execution}
           >
@@ -35,7 +39,7 @@ const Page = () => {
 
           <motion.p
             initial={{ opacity: 0, y: 50 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={inView1 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.4, delay: 0.4 }}
             className={styles.forth_section_third}
           >
@@ -46,7 +50,7 @@ const Page = () => {
 
           <motion.div
             initial={{ opacity: 0, y: 50 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={inView1 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.6 }}
             className={styles.forth_content_button}
           >
@@ -62,7 +66,7 @@ const Page = () => {
         </div>
       </div>
 
-      <div className={styles.forth_Section_container} ref={ref}>
+      <div className={styles.forth_Section_container} ref={ref2}>
         <div className={styles.forth_Section_image}>
           <Image
             src={third_Section_image2}
@@ -73,7 +77,7 @@ const Page = () => {
         <div className={styles.forth_Section_content1}>
           <motion.p
             initial={{ opacity: 0, y: 50 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={inView2 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
             className={styles.forth_section_first}
           >
@@ -82,7 +86,7 @@ const Page = () => {
 
           <motion.p
             initial={{ opacity: 0, y: 50 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={inView2 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
             className={styles.forth_Section_execution}
           >
@@ -91,7 +95,7 @@ const Page = () => {
 
           <motion.p
             initial={{ opacity: 0, y: 50 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={inView2 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
             className={styles.forth_section_third}
           >
@@ -101,7 +105,7 @@ const Page = () => {
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={inView2 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.6 }}
             className={styles.forth_content_button}
           >

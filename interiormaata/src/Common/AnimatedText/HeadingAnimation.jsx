@@ -16,7 +16,7 @@ const AnimatedTextWord = ({ text, fontSize, justifyContent , className}) => {
       y: 0,
       transition: {
         // type: "spring",
-        delay: 0.3,
+        delay: 0.2,
         damping: 12,
         stiffness: 50,
         duration: "1",

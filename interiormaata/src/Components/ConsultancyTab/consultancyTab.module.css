@@ -1,0 +1,131 @@
+.onlineConsultancy_outersection {
+  padding: 0 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.mainsection {
+  /* justify-content: center;
+      align-items: center; */
+  margin: 0;
+}
+
+/* .mainsection_2 {
+  padding: 0rem 7rem;
+} */
+
+.onlineConsultancy_section {
+  background-color: #d4d4d4;
+  border-radius: 25px;
+}
+
+.topButtons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4rem 1rem;
+  /* margin: 0 5rem; */
+}
+
+.btn1 {
+  background-color: #cc7d45;
+  border: none;
+  border-radius: 48px;
+  color: white;
+  font-family: "NeueMontreal-Regular", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.44px;
+  text-transform: capitalize;
+  word-wrap: break-word;
+  width: 242px;
+  height: 54px;
+}
+
+.btn2 {
+  background-color: #7f7047;
+  border: none;
+  border-radius: 48px;
+  color: white;
+  font-size: 22px;
+  font-family: "NeueMontreal-Regular", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.44px;
+  width: 242px;
+  height: 54px;
+  text-transform: capitalize;
+  word-wrap: break-word;
+}
+.btn3 {
+  background-color: white;
+  border: none;
+  border-radius: 48px;
+  color: black;
+  font-size: 22px;
+  font-family: "NeueMontreal-Regular", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.44px;
+  width: 242px;
+  height: 54px;
+  text-transform: capitalize;
+  word-wrap: break-word;
+}
+
+.contentSection {
+  padding: 2rem 4rem 7rem;
+  display: flex;
+  font-family: "NeueMontreal-Regular", sans-serif;
+  justify-content: space-around;
+}
+
+.textSection {
+  /* background-color: aquamarine; */
+  width: 50%;
+}
+
+.onlineConsultancy_section_title {
+  font-size: 54px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 1.08px;
+  word-wrap: break-word;
+}
+
+.onlineConsultancy_section_text {
+  width: 330px;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: "NeueMontreal-Light", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 0.48px;
+  word-wrap: break-word;
+}
+
+.title {
+  margin: 0;
+}
+
+.onlineConsultancy_section_btn {
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+}
+
+.imageSection {
+  border-radius: 50px;
+  /* width: 500px;
+      height: 500px; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageSection Image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Add more specific styles as needed */

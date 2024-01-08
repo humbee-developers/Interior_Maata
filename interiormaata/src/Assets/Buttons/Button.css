@@ -64,7 +64,7 @@
 
 
 
-
+/* button 2 */
 
 
 
@@ -72,10 +72,8 @@
 .button2 {
   appearance: none;
   background-color: transparent;
-  /* border-width: 0; */
   box-sizing: border-box;
   color: white;
-  /* color: #7F7047; */
   border: 1px solid #EBEBEB;
   cursor: pointer;
   display: inline-block;
@@ -142,7 +140,7 @@
 
 
 
-
+/* button 3 */
 
 
 
@@ -150,10 +148,8 @@
 .button3 {
   appearance: none;
   background-color: transparent;
-  /* border-width: 0; */
   box-sizing: border-box;
   color: rgb(0, 0, 0);
-  /* color: #7F7047; */
   border: 1px solid #000000;
   cursor: pointer;
   display: inline-block;
@@ -220,13 +216,15 @@
 }
 
 
+
+/* button 4 */
+
+
 .button4 {
   appearance: none;
   background: #C0C2AA;
-  /* border-width: 0; */
   box-sizing: border-box;
   color: rgb(0, 0, 0);
-  /* color: #7F7047; */
   border: none;
   cursor: pointer;
   display: inline-block;
@@ -275,20 +273,98 @@
 
 }
 
-.button3:after {
+.button4:after {
   background-color: #FFFFFF;
 }
 
-.button3 span {
+.button4 span {
   z-index: 1;
   position: relative;
 }
 
-.button3 span:before{
+.button4 span:before{
   color: black;
 }
 
-.button3:hover{
+.button4:hover{
   color: rgb(0, 0, 0);
-  border: 1px solid white;
+}
+
+
+
+
+
+
+/* button 5 */
+
+
+
+.button5 {
+  appearance: none;
+  background-color:#7F7047;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "NeueMontreal-Regular";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button5:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #EBEBEB;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  color: black;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button5:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+
+}
+
+.button5:after {
+  background-color: #FFFFFF;
+}
+
+.button5 span {
+  z-index: 1;
+  position: relative;
+}
+
+.button5 span:before{
+  color: black;
+}
+
+.button5:hover{
+  color: rgb(0, 0, 0);
+  /* border: 1px solid white; */
 }

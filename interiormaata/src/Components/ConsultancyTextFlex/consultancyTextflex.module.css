@@ -1,0 +1,147 @@
+.Consultancy_page_second_container {
+  width: 100%;
+  height: 100%;
+  padding-top: 10rem;
+}
+.Main_Container {
+  padding-left: 16rem;
+  padding-right: 12rem;
+}
+
+.Consultancy_page_second_content {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  width: 100%;
+}
+.online_consultancy_text {
+  color: #7f7047;
+  font-family: "NeueMontreal-Regular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.Consultancy_page_second_content_text {
+  color: #cc7d45;
+  font-family: Roseritta;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.Services_Header_Outer {
+  display: flex;
+  padding-top: 4rem;
+  align-items: stretch;
+  gap: 7rem;
+  padding-bottom: 4rem;
+}
+
+.Services_header_img_outer {
+  display: flex;
+  flex-direction: column;
+}
+.Services_header_img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.Services_header_info_text {
+  width: 100%;
+}
+
+.Services_header_img1_description {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 248px;
+  height: 100%;
+}
+.Services_header_info {
+  color: #cc7d45;
+  font-family: "NeueMontreal-Regular";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 1800px) {
+  .Main_Container {
+    padding-left: 25rem;
+    padding-right: 25rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Services_Header_Outer {
+    gap: 4rem;
+  }
+  .Main_Container {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  .Consultancy_page_second_content_text {
+    font-size: 54px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Services_Header_Outer {
+    gap: 2rem;
+  }
+  .Main_Container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .Consultancy_page_second_content {
+    padding-top: 0rem;
+  }
+  .Consultancy_page_second_content_text {
+    font-size: 49px;
+  }
+}
+@media screen and (max-width: 665px) {
+  .Consultancy_page_second_content_text {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .Services_Header_Outer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Consultancy_page_second_container {
+    padding-top: 4rem;
+  }
+  .Consultancy_page_second_content_text {
+    font-size: 22px;
+  }
+  .Main_Container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .online_consultancy_text {
+    display: none;
+  }
+  .Consultancy_page_second_content {
+    padding-bottom: 0rem;
+  }
+  .Services_Header_Outer {
+    padding-bottom: 0rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .Main_Container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
