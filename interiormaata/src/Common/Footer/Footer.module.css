@@ -2,7 +2,6 @@
   background-color: black;
   color: white;
   padding-top: 6rem;
-  /* padding: 5rem 5rem; */
   padding-bottom: 2rem;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -95,10 +94,9 @@
 .footer_last_Section {
   color: #fff;
   font-family: "NeueMontreal-Regular";
-  font-size: 180px;
+  font-size: 181px;
   font-style: normal;
   font-weight: 400;
-  /* text-align: center; */
   width: 100%;
   line-height: normal;
   text-transform: uppercase;
@@ -111,6 +109,40 @@
   justify-content: center;
   align-items: center;
 }
+.footer_social_media1 {
+  display: none;
+}
+
+/* @media (min-width: 1920px) {
+  .footer_last_Section {
+    color: #fff;
+    font-family: "NeueMontreal-Regular";
+    font-size: 236px;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+
+  .footer_copyright {
+    display: flex;
+    justify-content: space-between;
+    color: #9d9d9d;
+    font-family: "NeueMontreal-Light";
+    font-size: 18px;
+    font-style: normal;
+    align-items: center;
+    font-weight: 300;
+    line-height: 33.5px;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.27px;
+    text-transform: capitalize;
+    border-bottom: 1px solid white;
+  }
+} */
+
 
 @media (min-width: 1600px) {
   .footer_last_Section {
@@ -119,9 +151,229 @@
     font-size: 231px;
     font-style: normal;
     font-weight: 400;
-    /* text-align: center; */
     width: 100%;
     line-height: normal;
     text-transform: uppercase;
   }
+
+
+  .footer_copyright {
+    display: flex;
+    justify-content: space-between;
+    color: #9d9d9d;
+    font-family: "NeueMontreal-Light";
+    font-size: 22px;
+    font-style: normal;
+    align-items: center;
+    font-weight: 300;
+    line-height: 33.5px;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.27px;
+    text-transform: capitalize;
+    border-bottom: 1px solid white;
+  }
+
+}
+
+@media (max-width: 1440px) {
+  .footer_last_Section {
+    font-size: 169px;
+  }
+}
+@media (max-width: 1280px) {
+    .footer_last_Section {
+      font-size: 150px;
+    }
+  }
+@media (max-width: 1024px) {
+  .footer_last_Section {
+    font-size: 115px;
+  }
+
+  .footer_social_media {
+    display: flex;
+    padding-bottom: 0;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer_copyright {
+    display: flex;
+    justify-content: space-between;
+    color: #9d9d9d;
+    font-family: "NeueMontreal-Light";
+    font-size: 17px;
+    font-style: normal;
+    align-items: center;
+    font-weight: 300;
+    line-height: 33.5px;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.27px;
+    text-transform: capitalize;
+    border-bottom: 1px solid white;
+  }
+
+
+}
+
+
+
+@media (max-width: 991px) {
+  .footer_last_Section {
+    font-size: 100px;
+  }
+
+
+  .footer_Second {
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+  }
+
+
+}
+@media (max-width: 768px) {
+  .footer_last_Section {
+    font-size: 80px;
+  }
+  .Footer_Content {
+    border-top: none;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+    gap: 4rem;
+    padding-bottom: 3rem;
+  }
+  .footer_Second {
+    border-top: 1px solid white;
+    padding-top: 3rem;
+    justify-content: flex-start;
+  }
+  .Footer_Section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .footer_copyright {
+    border-bottom: none;
+  }
+  .footer_social_media {
+    display: flex;
+    padding-bottom: 0;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    width: 100%;
+
+    text-align: center;
+    justify-content:left;
+    align-items: center;
+  }
+  .footer_copyright {
+    font-size: 17px;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  .footer_social_media1 {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    gap: 1rem;
+    text-align: center;
+    justify-content: end;
+    align-items: center;
+  }
+}
+
+@media (max-width: 430px) {
+  .Footer_Section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .footer_last_Section {
+    font-size: 43px;
+  }
+  .footer_Second {
+    gap: 3rem;
+  }
+  .Footer_Content {
+    gap: 4rem;
+    padding-top: 0rem;
+  }
+  .footer_website{
+    font-size: 19px;
+}
+}
+
+@media (max-width: 375px) {
+    .footer_Second {
+        gap: 2rem;
+      }
+      .Footer_Section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      .footer_last_Section {
+        font-size: 42px;
+        width: 100%;
+        justify-content: end;
+        display: flex;
+      }
+}
+
+
+@media (max-width: 360px) {
+    .footer_Second {
+        gap: 2rem;
+        padding-top: 2rem;
+      }
+      .Footer_Section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      .footer_last_Section {
+      
+        font-size: 34px;
+    width: 100%;
+    justify-content: end;
+    display: flex;
+      }
+      .footer_website{
+        font-size: 16px;
+      }
+      .footer_home{
+        font-size: 15px;
+      }
+      .footer_Search{
+        font-size: 15px;
+      }
+      .Footer_Content{
+        gap: 2rem;
+        padding-bottom: 2rem;
+      }
+      .footer_address{
+        font-size: 30px;
+      }
+      .phone_no{
+        font-size: 30px;
+      }
+      
+}
+@media (max-width: 300px) {
+    .footer_website{
+        font-size: 13px;
+        
+    }
+    .footer_Second{
+        gap: 1.5rem;
+    }
+    .footer_last_Section{
+        font-size: 28px;
+        width: 100%;
+        justify-content: end;
+        display: flex;
+    }
+    .footer_copyright{
+        font-size: 12px;
+        line-height: 25.5px;
+    }
 }

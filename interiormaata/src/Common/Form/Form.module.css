@@ -3,15 +3,18 @@
   flex-wrap: nowrap;
   width: 100%;
 }
-
+.contact_form_wrapper{
+  width: 63%;
+  /* padding-top: 3rem; */
+}
 .contact_form {
   width: 50%;
-  padding: 4rem 9rem 5rem 9rem;
+  display: flex;
+  /* padding: 4rem 9rem 5rem 9rem; */
   justify-content: center;
   align-items: center;
-  background: #7f7047;
+  background: #7F7047;
 }
-
 .contact_form_title {
   color: #fff;
   font-family: "NeueMontreal-Regular";
@@ -22,7 +25,6 @@
   text-transform: capitalize;
   padding-bottom: 3rem;
 }
-
 .field label {
   color: #fff;
   font-family: "NeueMontreal-Regular";
@@ -32,28 +34,21 @@
   line-height: normal;
   text-transform: capitalize;
 }
-
 .contact_us_image {
   width: 50%;
 }
-
 .field {
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
 }
-
-
-
 .Submit_button_outer{
   margin-top: -15px;
 }
-
-
 .field input {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #d1d1d1;
+  border-bottom: 1px solid #D1D1D1;
   /* padding-top: 1rem; */
   width: 100%;
   /* font-family: lato; */
@@ -73,7 +68,7 @@
   color: white;
   outline: none;
   border: none;
-  border-bottom: 1px solid #d1d1d1;
+  border-bottom: 1px solid #D1D1D1;
 }
 .field input:focus {
   outline: none;
@@ -88,13 +83,13 @@
   line-height: normal;
   text-transform: capitalize;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #d1d1d1;
+  border-bottom: 1px solid #D1D1D1;
 }
 .p-dropdown-item {
   color: white;
   font-family: Neue Montreal;
   padding: 8px;
-  background-color: #7f7047;
+  background-color: #7F7047;
   font-size: 17px;
 }
 p.error {
@@ -102,7 +97,6 @@ p.error {
   font-size: 15px;
   margin: 0;
 }
-
 .contact_img {
   display: block;
   width: 100%;
@@ -110,10 +104,9 @@ p.error {
   object-position: bottom;
   max-width: 100%;
 }
-
 .Submit_button {
   color: #000;
-  background: #c0c2aa;
+  background: #C0C2AA;
   font-family: "NeueMontreal-Regular";
   font-size: 20px;
   font-style: normal;
@@ -130,18 +123,36 @@ p.error {
   background-color: transparent;
   border: none;
 }
-
+@media (max-width: 1024px) {
+  .contact_form_wrapper{
+    padding-top: 3rem;
+  }
+}
 @media (max-width: 768px) {
   .Contact_form_section {
     flex-direction: column;
   }
-
+  .contact_img{
+    max-width: 100%;
+    height: auto;
+  }
   .contact_form,
   .contact_us_image {
     width: 100%;
   }
-
+  .contact_form_wrapper{
+    width: 70%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
   .Submit_button {
     float: none;
+  }
+}
+@media (max-width: 425px) {
+  .contact_form_wrapper{
+    width: 80%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }

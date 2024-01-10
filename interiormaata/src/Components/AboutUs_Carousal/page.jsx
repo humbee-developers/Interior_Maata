@@ -83,7 +83,7 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={StyleSheet.third_section_content}>
+          <div className={styles.third_section_content}>
             <Image
               src={AboutUs_carousal_image2}
               alt="carousal_image"
