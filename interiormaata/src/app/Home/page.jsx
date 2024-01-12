@@ -1,10 +1,13 @@
+"use client"
 import React from 'react'
-import Navbar from "@/Common/Navbar/page"
+import Stairs from "@/Animations/Stairs"
 const Page = () => {
  
   return (
     <div>
-      <Navbar/>
+      <Stairs>
+        <h1>Home</h1>
+      </Stairs>
     </div>
   )
 }

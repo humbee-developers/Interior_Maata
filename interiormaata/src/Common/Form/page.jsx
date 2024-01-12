@@ -1,12 +1,15 @@
-"use client"
+"use client";
 import { useFormik } from "formik";
+import { ChevronDownIcon } from "primereact/icons/chevrondown";
+import { ChevronUpIcon } from "primereact/icons/chevronup";
 import React, { useState } from "react";
-import ContactFormSchemas from "@/schema/Contact_form_schema"
+import ContactFormSchemas from "@/schema/Contact_form_schema";
 import Image from "next/image";
 import From_image from "@/images/Form_image.png";
-import { Dropdown } from 'primereact/dropdown';
-import Button from "@/Assets/Buttons/button4"
-import styles  from "@/Common/Form/Form.module.css"
+import { Dropdown } from "primereact/dropdown";
+import Button from "@/Assets/Buttons/button4";
+import styles from "@/Common/Form/Form.module.css";
+import "./immx.css";
 const Page = () => {
   const initialValues = {
     Name: "",
@@ -17,11 +20,11 @@ const Page = () => {
   };
   const [selectedCity, setSelectedCity] = useState(null);
   const cities = [
-      { name: 'New York', code: 'NY' },
-      { name: 'Rome', code: 'RM' },
-      { name: 'London', code: 'LDN' },
-      { name: 'Istanbul', code: 'IST' },
-      { name: 'Paris', code: 'PRS' }
+    { name: "New York", code: "NY" },
+    { name: "Rome", code: "RM" },
+    { name: "London", code: "LDN" },
+    { name: "Istanbul", code: "IST" },
+    { name: "Paris", code: "PRS" },
   ];
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
     initialValues,
@@ -102,14 +105,26 @@ const Page = () => {
               )}
             </div>
             <div className={styles.field}>
-            <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={cities} optionLabel="name" 
-                placeholder="How many BHK ( Bedroom ) is your new home" className={styles.dropdown_menu} />
+              <Dropdown
+                value={selectedCity}
+                onChange={(e) => setSelectedCity(e.value)}
+                options={cities}
+                optionLabel="name"
+                placeholder="How many BHK ( Bedroom ) is your new home"
+                className={styles.dropdown_menu}
+                dropdownIcon={(opts) => {
+                  return opts.iconProps["data-pr-overlay-visible"] ? (
+                    <ChevronUpIcon {...opts.iconProps} />
+                  ) : (
+                    <ChevronDownIcon {...opts.iconProps} />
+                  );
+                }}
+              />
               {touched.Address && errors.Address && (
                 <p className={styles.error}>{errors.Address}</p>
               )}
             </div>
 
-            
             <div className={styles.field}>
               <label htmlFor="Intro">Brief description of your Project</label>
               <textarea
@@ -126,16 +141,21 @@ const Page = () => {
 
             <div className={styles.field}>
               <div className={styles.Submit_button_outer}>
-              <Button button_text="Submit"/>
+                <Button button_text="Submit" />
               </div>
             </div>
           </form>
         </div>
       </div>
       <div className={styles.contact_us_image}>
-       <div className={styles.FormImage_outer}>
-       <Image src={From_image} alt="" srcset="" className={styles.contact_img} />
-       </div>
+        <div className={styles.FormImage_outer}>
+          <Image
+            src={From_image}
+            alt=""
+            srcset=""
+            className={styles.contact_img}
+          />
+        </div>
       </div>
     </div>
   );

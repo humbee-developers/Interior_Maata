@@ -1,0 +1,74 @@
+.work_container {
+      padding-left: 5rem;
+      padding-right: 5rem;
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+    .work_title {
+      margin: 0 auto;
+      width: 100%;
+    }
+    .work_text {
+      color: #7f7047;
+      text-align: center;
+      font-family: Roseritta;
+      font-size: 120.669px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+    .work_title1 {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      width: 63%;
+      margin: 0 auto;
+    }
+    .work_text1 {
+      color: #000;
+      text-align: center;
+      font-family: Neue Montreal;
+      font-size: 15.616px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    @media (min-width:1500px){
+        .work_title{
+            width: 80%;
+        }
+        .work_title1{
+            width: 47%;
+        }
+    }
+    @media (max-width:1200px){
+        .work_text{
+            font-size: 110px;
+        }
+    }
+    @media (max-width:768px){
+        .work_text{
+            font-size: 70px;
+        }
+        .work_title1{
+            width: 100%;
+        }
+        .work_container{
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    }
+    @media (max-width:425px){
+        .work_container {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+          }
+          .work_text{
+            font-size: 40px;
+        }
+        .work_title1{
+            padding-bottom: 0rem;
+        }
+    }

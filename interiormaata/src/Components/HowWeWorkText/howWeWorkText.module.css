@@ -1,0 +1,40 @@
+.happy_container {
+  background: #cc7d45;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.happy_title {
+  margin: 0 auto;
+  width: 50%;
+}
+.happy_text {
+  color: #fff;
+  text-align: center;
+  font-family: Roseritta;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+@media (min-width: 1500px) {
+  .happy_title {
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .happy_title {
+    width: 50%;
+  }
+  .happy_text {
+    font-size: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .happy_title {
+    width: 100%;
+  }
+  .happy_text {
+    font-size: 30px;
+  }
+}

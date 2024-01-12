@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
+import Stairs from "@/Animations/Stairs"
 import ServicesCards from "@/Components/ServicesCards/page";
 import ServicesFlex from "@/Components/ServicesFlex/page";
 const Page = () => {
@@ -12,8 +13,11 @@ const Page = () => {
   
   return (
     <div>
+
+    <Stairs>
       <ServicesCards />
       <ServicesFlex />
+      </Stairs>
     </div>
   );
 };

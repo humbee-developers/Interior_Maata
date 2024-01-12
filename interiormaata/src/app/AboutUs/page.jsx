@@ -1,5 +1,6 @@
 "use client"
 import React ,{useEffect} from 'react'
+import Stairs from "@/Animations/Stairs"
 import AboutUs_header from "@/Components/AboutUs_header/page"
 import AboutUs_threeCards from "@/Components/AboutUs_threeCards/page"
 import Marquee from "@/Components/Marquee/page"
@@ -18,6 +19,7 @@ const page = () => {
   }, [])
   return (
     <div>
+    <Stairs>
       <AboutUs_header/>
       <AboutUs_threeCards/>
       <Marquee/>
@@ -25,6 +27,7 @@ const page = () => {
       <AboutUs_flex/>
       <AboutUsInfo/>
       <AboutUs_ourDesign/>
+    </Stairs>
     </div>
   )
 }

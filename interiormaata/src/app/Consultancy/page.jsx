@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
+import Stairs from "@/Animations/Stairs"
 import ConsultancyHeader from "@/Components/ConsultancyHeader/page";
 import ConsultancyTextFlex from "@/Components/ConsultancyTextFlex/page";
 import ConsultancyTab  from "@/Components/ConsultancyTab/page";
@@ -13,9 +14,11 @@ const Page = () => {
 
   return (
     <div>
+    <Stairs>
       <ConsultancyHeader />
       <ConsultancyTextFlex />
       <ConsultancyTab/>
+    </Stairs>
     </div>
   );
 };
