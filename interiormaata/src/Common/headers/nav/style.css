@@ -1,5 +1,9 @@
 .nav {
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .new_nav {
   height: 100vh;
@@ -17,18 +21,15 @@
   margin-bottom: 80px;
   padding: 0 20px;
 }
-
 .container_navbar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-
 .wrapper{
-  padding: 2rem 4rem;
+  padding: 8rem 4rem 3rem;
+  position: relative;
 }
-
 @media only screen and (min-width: 1000px) {
   .nav_image {
     margin-top: 2rem;

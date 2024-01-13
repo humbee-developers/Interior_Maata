@@ -1,8 +1,5 @@
 .nav_body {
-  /* display: flex; */
   flex-wrap: wrap;
-  /* padding: 2rem 4rem; */
-
 }
 .nav_body a {
   color: rgb(255, 255, 255);
@@ -11,43 +8,38 @@
   width: fit-content;
   text-transform: uppercase;
 }
-
 .nav_body p {
   margin: 0px;
   display: flex;
   font-family: Roseritta;
   overflow: hidden;
   font-size: 60px;
-  /* padding-right: 30px; */
-  /* padding-top: 10px; */
   font-weight: 300;
 }
-
-/* @media only screen and (min-width: 1000px) {
-  .nav_body {
-    max-width: 1200px;
-    margin-top: 80px;
-  }
-  .nav_body p {
-    font-size: 4.9vw;
-    padding-right: 2vw;
-  }
-} */
-
-
+.navOpenLogo{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  top: 40px;
+}
+.interiormaata_openMenu_Text {
+  font-size: 30px;
+  font-family: "NeueMontreal-Regular";
+  text-transform: uppercase;
+  color: #fff;
+}
 @media (min-width: 1600px) and (max-width: 1920px) {
   .nav_body {
     /* display: flex; */
     flex-wrap: wrap;
     /* padding: 2rem 4rem; */
-  
   }
   .nav_body a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-transform: uppercase;
   }
-  
   .nav_body p {
     margin: 0px;
     display: flex;
@@ -59,3 +51,6 @@
     font-weight: 300;
   }
 }
+
+
+

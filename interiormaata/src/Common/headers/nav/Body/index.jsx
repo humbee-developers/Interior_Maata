@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-import Link from 'next/link';
+import Link from "next/link";
 import "./style4.css";
 import { blur, translate } from "../../anim";
 import { useState } from "react";
-
+import nav_logo from "@/Svgs/logo.svg";
+import Image from "next/image";
 export default function Body({
   links,
   selectedLink,
@@ -28,9 +29,18 @@ export default function Body({
     });
     return chars;
   };
-
   return (
     <div className="nav_body">
+      <div
+        className={`navOpenLogo`}
+      >
+        <Image
+          src={nav_logo}
+          alt="Description of the image"
+          className="navOpenLogo_img"
+        />
+        <span className="interiormaata_openMenu_Text">interiormaata</span>
+      </div>
       {links.map((link, index) => {
         const { title, href } = link;
         return (
