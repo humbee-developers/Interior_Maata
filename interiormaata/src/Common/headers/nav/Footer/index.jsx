@@ -8,11 +8,23 @@ export default function Footer() {
           
             <ul className='ul'>
                 <motion.li
+                className="footer_link1"
                     custom={[0.3, 0]} 
                     variants={translate} initial="initial" 
                     animate="enter" 
                     exit="exit">
-                    <span>Social:</span> INSTAGRAM, FACEBOOK
+                    <a href="">INSTAGRAM </a>
+                    
+                </motion.li>
+
+                <motion.li
+                className="footer_link2"
+                    custom={[0.3, 0]} 
+                    variants={translate} initial="initial" 
+                    animate="enter" 
+                    exit="exit">
+                    <a href="">FACEBOOK</a>
+                    
                 </motion.li>
             </ul>
            
