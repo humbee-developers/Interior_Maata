@@ -1,97 +1,51 @@
-// Card.jsx
-'use client'
-import React from "react";
-import Image from 'next/image';
-import cardImage1 from "@/images/Team_cardimage1.png";
-import cardImage2 from "@/images/Team_cardimage2.png";
-import cardImage3 from "@/images/Team_cardimage3.png";
-import styles from "@/Components/TeamsPage/Card_stack.module.css";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import React, { useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import styles from "@/Components/TeamsPage/Card_stack.module.css"
 
-const Card = () => {
-    React.useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
 
-        const cards = gsap.utils.toArray(".c-project");
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-        cards.forEach((card, index) => {
-            gsap.to(card, {
-                scrollTrigger: {
-                    trigger: card,
-                    start: "top bottom-=100",
-                    end: "top top+=40",
-                    scrub: true,
-                },
-                ease: "none",
-                scale: () => 1 - (cards.length - index) * 0.025,
-            });
+const CardStack = () => {
+  useEffect(() => {
+    // GSAP Timeline
+    let timeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: `.${styles.cards}`,
+        pin: true,
+        pinSpacing: true,
+        start: 'left-=120px left',
+        end: '+=2000',
+        scrub: 1,
+      },
+    });
 
-            ScrollTrigger.create({
-                trigger: card,
-                start: "top top",
-                pin: false,
-                pinSpacing: false,
-                end: "max",
-            });
-        });
-    }, []);
+    timeline.addLabel('card1');
+    timeline.to(`.${styles.card1}`, { xPercent: 0, opacity: 1 });
+    timeline.from(`.${styles.card2}`, { xPercent: 75, opacity: 0 });
 
-    return (
-        <div>
-            <section id="projects" className={styles.cSection}>
-                <div className={styles.cContainer}>
-                    <div className={styles.cProjectsLayout}>
-                        <div className={styles.cProjectsWrapper}>
-                            <div className={`${styles.cProject} ${styles.cc1}`}>
-                                <Image
-                                    src={cardImage1}
-                                    alt=""
-                                    className={styles.cImageContain}
-                                />
-                            </div>
-                            <div className={`${styles.cProject} ${styles.cc2}`}>
-                                <Image
-                                    src={cardImage2}
-                                    alt=""
-                                    className={styles.cImageContain}
-                                />
-                            </div>
-                            <div className={`${styles.cProject} ${styles.cc3}`}>
-                                <Image
-                                    src={cardImage3}
-                                    alt=""
-                                    className={styles.cImageContain}
-                                />
-                            </div>
-                            <div className={`${styles.cProject} ${styles.cc3}`}>
-                                <Image
-                                    src={cardImage2}
-                                    alt=""
-                                    className={styles.cImageContain}
-                                />
-                            </div>
-                            <div className={`${styles.cProject} ${styles.cc3}`}>
-                                <Image
-                                    src={cardImage1}
-                                    alt=""
-                                    className={styles.cImageContain}
-                                />
-                            </div>
-                            <div className={`${styles.cProject} ${styles.cc3}`}>
-                                <Image
-                                    src={cardImage3}
-                                    alt=""
-                                    className={styles.cImageContain}
-                                />
-                            </div>
+    timeline.addLabel('card2');
+    timeline.to(`.${styles.card1}`, { scale: 0.95, xPercent: -0.5, opacity: 0.5 }, '--0.3');
+    timeline.to(`.${styles.card2}`, { xPercent: 0, opacity: 1 });
 
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    );
+    timeline.from(`.${styles.card3}`, { xPercent: 75, opacity: 0 });
+
+    timeline.addLabel('card3');
+    timeline.to(`.${styles.card2}`, { scale: 0.98, xPercent: -0.4, opacity: 0.6 }, '-=0.3');
+    timeline.to(`.${styles.card3}`, { xPercent: 0, opacity: 1 });
+  }, []); // Empty dependency array to ensure useEffect runs only once
+
+  return (
+    <div>
+      <div className={styles.card}>
+        <div className={`${styles.card} ${styles.card1}`}><h2>01</h2></div>
+        <div className={`${styles.card} ${styles.card2}`}><h2>02</h2></div>
+        <div className={`${styles.card} ${styles.card3}`}><h2>03</h2></div>
+        {/* <div className={`${styles.card} ${styles.card4}`}></div> */}
+      </div>
+    </div>
+  );
 };
 
-export default Card;
+export default CardStack;
