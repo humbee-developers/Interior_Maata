@@ -14,7 +14,7 @@ const links = [
     src: "home.png"
   },
   {
-    title: "About Us",
+    title: "AboutUs",
     href: "/AboutUs",
     src: "shop.png"
   },
