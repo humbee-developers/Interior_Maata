@@ -112,7 +112,7 @@ a {
 @font-face {
   font-family: "Roseritta";
   src: local("Roseritta"),
-    url("/interiormaata/src/fonts/Roseritta.otf") format("truetype");
+    url("../fonts/Roseritta.otf") format("truetype");
   font-weight: normal;
 }
 @font-face {
