@@ -42,3 +42,56 @@
   line-height: 19px;
   text-transform: capitalize;
 }
+
+@media screen and (max-width: 1024px) {
+  .ananya {
+    font-size: 80px;
+    line-height: 60px;
+    padding-bottom: 1.5rem;
+    width: 100%;
+  }
+  
+
+  .aboutUs_flex_divider {
+    width: 100%;
+    flex-direction: column; 
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .aboutUs_banner_text_outer{
+    margin: 0 auto;
+    width: 52%;
+  }
+
+  .aboutUs_banner_text {
+    /* font-size: 14px;  */
+    /* line-height: 18px;  */
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .ananya{
+    font-size: 54px;
+    line-height: 38px;
+  }
+  .aboutUs_banner_text_outer{
+    width: 88%;
+  }
+  .aboutUs_flex_divider{
+    gap: 1.3rem;
+  }
+  .aboutUsHeader{
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .ananya{
+    font-size: 45px;
+    line-height: 32px;
+  }
+  .aboutUs_banner_text_outer{
+    width: 95%;
+  }
+}

@@ -28,7 +28,7 @@
 .field label {
   color: #fff;
   font-family: "NeueMontreal-Regular";
-  font-size: 15px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -46,15 +46,14 @@
   margin-top: -15px;
 }
 .field input {
-  background-color: transparent;
+  background: transparent;
   border: none;
-  border-bottom: 1px solid #D1D1D1;
+  /* border-bottom: 1px solid #D1D1D1; */
   /* padding-top: 1rem; */
   width: 100%;
-  /* font-family: lato; */
-  height: 30px;
+  height: 20px;
   margin-bottom: 6px;
-  font-size: 15px;
+  font-size: 18px;
   color: white;
   font-style: normal;
   font-weight: 400;
@@ -92,10 +91,10 @@
   background-color: #7F7047;
   font-size: 17px;
 }
-p.error {
+.error {
   color: red;
   font-size: 15px;
-  margin: 0;
+  margin-top: 0.3rem;
 }
 .contact_img {
   display: block;
