@@ -55,3 +55,66 @@
       width: 10vw;
   }
     
+
+  @media (max-width: 1024px) {
+    .project p {
+      font-size: 5vw;
+    }
+  
+    .project img {
+      width: 12vw;
+    }
+    .main{
+      height: 70vh;
+    }
+    .gallery{
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .project p {
+      font-size: 43px;
+    }
+  
+    .project img {
+      width: 10vw;
+    }
+    .gallery{
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .project p {
+      font-size: 23px;
+    }
+  
+    .project img {
+      width: 10vw;
+    }
+    .main{
+      height: 35vh;
+    }
+  }
+  @media (max-width: 375px) {
+    .project p {
+      font-size: 20px;
+    }
+  
+    .project img {
+      width: 8vw;
+    }
+    .main{
+      height: 30vh;
+    }
+  }
+  @media (max-width: 320px) {
+    .project p {
+      font-size: 18px;
+    }
+  
+    .project img {
+      width: 8vw;
+    }
+  }

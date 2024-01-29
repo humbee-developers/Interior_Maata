@@ -66,7 +66,7 @@ const Page = () => {
         </div>
       </div>
 
-      <div className={styles.forth_Section_container} ref={ref2}>
+      <div className={styles.forth_Section_container1} ref={ref2}>
         <div className={styles.forth_Section_image}>
           <Image
             src={third_Section_image2}

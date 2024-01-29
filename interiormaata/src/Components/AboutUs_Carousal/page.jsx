@@ -9,26 +9,27 @@ import { EffectFade, Navigation } from "swiper/modules";
 import Image from "next/image";
 import AboutUs_carousal_image from "@/images/AboutUs_carousal_image1.png";
 import AboutUs_carousal_image2 from "@/images/AboutUs_carousal_image3.jpg";
-import sliderArrow from "@/Svgs/AboutUs_carousal_icon.svg"
+// import sliderArrow from "@/Svgs/AboutUs_carousal_icon.svg"
 
 import styles from "@/Components/AboutUs_Carousal/AboutUs_Carousal.module.css";
 import "./AboutUsCarousal.css"
 export default function App() {
-    const arrowRef1 = useRef(null);
-    const arrowRef2 = useRef(null);
+    // const arrowRef1 = useRef(null);
+    // const arrowRef2 = useRef(null);
   return (
     <>
       {/* effect={'fade'} */}
       <Swiper
+      navigation={true}
         // navigation={true}
         modules={[Navigation, EffectFade]}
         speed={500}
         loop={true}
-        navigation={{
-              nextEl: ".sliderArrow_next",
-              prevEl: ".sliderArrow_prev",
-              disabledClass: "swiper-button-disabled",
-            }}
+        // navigation={{
+        //       nextEl: ".sliderArrow_next",
+        //       prevEl: ".sliderArrow_prev",
+        //       disabledClass: "swiper-button-disabled",
+        //     }}
         className={styles.mySwiper}
       >
         <SwiperSlide>
@@ -40,9 +41,9 @@ export default function App() {
             />
             <div className={styles.third_section_overlay}>
               <p className={styles.third_section_overlay_text}>
-                "Designing spaces, sparking joy:
+                "Designing spaces, sparking joy:  
                 <span className={styles.third_section_overlay_span}>
-                  where elegance meets functionality effortlessly."
+                      where elegance meets functionality effortlessly."
                 </span>
               </p>
             </div>
@@ -100,7 +101,7 @@ export default function App() {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className={"sliderArrow"}>
+      {/* <div className={"sliderArrow"}>
             <div className={"sliderArrow_next"} ref={arrowRef1}>
             <Image
             src={sliderArrow}
@@ -117,7 +118,7 @@ export default function App() {
            
           />
             </div>
-          </div>
+          </div> */}
     </>
   );
 }

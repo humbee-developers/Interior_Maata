@@ -1,8 +1,14 @@
-import * as Yup from "yup";
-export const ContactFormSchemas = Yup.object({
-  fullName: Yup.string().required("Full name is required"),
-  message: Yup.string().required("Message is required"),
-  email: Yup.string().email().required("Email is required"),
-  phone: Yup.string().required("Phone number is required"),
+import * as Yup from 'yup';
+export const ContactFormSchemas1 = Yup.object({
+  Name: Yup.string().required('Full Name is required'),
+  LastName: Yup.string().required('Last Name is required'),
+  Email: Yup.string().email('Invalid email address').required('Email is required'),
+  Phone: Yup.string()
+    .matches(/^[0-9]+$/, 'Must be only digits')
+    .min(10, 'Must be exactly 10 digits')
+    .max(10, 'Must be exactly 10 digits')
+    .required('Phone number is required'),
+  Address: Yup.string().required('Address is required'),
+  select: Yup.string().required('Please select any one option'),
+  Description: Yup.string().required('Description is required'),
 });
-export default ContactFormSchemas;
