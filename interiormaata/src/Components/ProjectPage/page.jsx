@@ -30,11 +30,10 @@ const Projects = () => {
         });
     };
 
-    // console.log("curren", currentData)
+    // console.log("current", currentData)
     const lastIndex = pageNumber * itemsPerPage;
     const firstIndex = lastIndex - itemsPerPage;
     const displayedData = currentData?.slice(firstIndex, lastIndex);
-
 
     return (
         <div ref={projectsRef}>
