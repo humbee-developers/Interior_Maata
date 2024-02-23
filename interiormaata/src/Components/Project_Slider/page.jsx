@@ -36,7 +36,10 @@ export default function App() {
             // centeredSlides={true}
             loop={true}
             speed={1500}
-            thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
+            thumbs={{
+              swiper:
+                thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
+            }}
           >
             <SwiperSlide>
               <div className={styles.third_section_content}>
