@@ -87,6 +87,7 @@ const Projects = () => {
                                 className={styles.ProjectSection_image}
                                 src={data.image}
                                 alt={data.title}
+                                
                             />
                         </div>
 
