@@ -9,7 +9,7 @@ import img5 from "@/Svgs/Team_image5.svg"
 import img7 from "@/images/Team_image7.png"
 import Marquee from "react-marquee-slider";
 import styles from "@/Components/TeamsPage/teamsPage.module.css"
-import Card from '@/Components/TeamsPage/Card_stack'
+// import Card from '@/Components/TeamsPage/Card_stack'
 import "./imx.css"
 const TeamPage = () => {
     const photos = [img1, img2, img3, img4, img5];
@@ -45,7 +45,7 @@ const TeamPage = () => {
                 </div>
                 <div className={styles.card_stack_section}>
                     {/* <Image src={img6} alt={"img"} /> */}
-                    <Card />
+                    {/* <Card /> */}
 
                 </div>
                 <div className={styles.teamPage_content3}>
