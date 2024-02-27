@@ -1,0 +1,26 @@
+.Contact_Us_outer {
+    position: relative;
+  }
+  .Contact_us_overlay {
+    position: absolute;
+    top: 47%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+  }
+  .Contact_us_overlay_text {
+    color: #fff;
+    width: 43%;
+    font-family: Roseritta;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.16px;
+    text-transform: uppercase;
+  }
+  .Contact_Us_img{
+      width: 100%;
+      display: block;
+      height: 100vh;
+  }
+  

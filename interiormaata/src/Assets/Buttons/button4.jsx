@@ -1,13 +1,12 @@
-'use client'
- 
-import { useRouter } from 'next/navigation'
+
+// import { useRouter } from 'next/navigation'
 import React from "react";
 import './Button.css'
 const Button = (props) => {
-  const router = useRouter()
+  // const router = useRouter()
   return (
     <div>
-     <button onClick={()=>router.push("/")} class="button4" role="button"><span class="text">{props.button_text}</span></button>
+     <button  class="button4" role="button"><span class="text">{props.button_text}</span></button>
     </div>
   )
 }
