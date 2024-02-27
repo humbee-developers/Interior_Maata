@@ -6,10 +6,10 @@ import img3 from "@/Svgs/Team_image2.svg"
 import img4 from "@/Svgs/Team_image3.svg"
 import img2 from "@/Svgs/Team_image4.svg"
 import img5 from "@/Svgs/Team_image5.svg"
-import img6 from "@/images/Team_image6.png"
 import img7 from "@/images/Team_image7.png"
 import Marquee from "react-marquee-slider";
 import styles from "@/Components/TeamsPage/teamsPage.module.css"
+// import Card from '@/Components/TeamsPage/Card_stack'
 import "./imx.css"
 const TeamPage = () => {
     const photos = [img1, img2, img3, img4, img5];
@@ -43,8 +43,10 @@ const TeamPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.image_content5}>
-                    <Image src={img6} alt={"img"} />
+                <div className={styles.card_stack_section}>
+                    {/* <Image src={img6} alt={"img"} /> */}
+                    {/* <Card /> */}
+
                 </div>
                 <div className={styles.teamPage_content3}>
                     <div className={styles.teamPage_content3_Text}>WE BELIEVE WONDERFUL WORK COMES FROM CREATIVE GENEROSITY.</div>
@@ -53,17 +55,17 @@ const TeamPage = () => {
                     <div className={styles.teamPage_content4_Text}>
                         <div>
                             <p>Step into the world of interiormaata, where design meets imagination. Our dedicated team of
-                                 architects and designers is driven by a shared commitment to elevate your spaces to new heights of
-                                 sophistication. With a blend of creativity and technical expertise, we turn dreams into reality. </p>
+                                architects and designers is driven by a shared commitment to elevate your spaces to new heights of
+                                sophistication. With a blend of creativity and technical expertise, we turn dreams into reality. </p>
                             <p>Each team member brings a unique perspective, contributing to a harmonious fusion of style and functionality.
                                 We believe in collaborative synergy, ensuring that every project reflects our client's vision. Meet the passionate
                                 individuals who breathe life into spaces, as interiormaata continues to redefine the art of interior design with innovation,
-                                 precision, and a touch of elegance.</p>
+                                precision, and a touch of elegance.</p>
                         </div>
                     </div>
                 </div>
                 <div className={styles.image_content5}>
-                    <Image src={img7} alt={"img"}/>
+                    <Image src={img7} alt={"img"} />
                 </div>
             </div>
         </>

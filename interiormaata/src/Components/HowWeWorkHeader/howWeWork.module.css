@@ -40,6 +40,9 @@
         .work_title1{
             width: 47%;
         }
+        .work_container{
+            padding-bottom: 13.5rem;
+        }
     }
     @media (max-width:1200px){
         .work_text{
