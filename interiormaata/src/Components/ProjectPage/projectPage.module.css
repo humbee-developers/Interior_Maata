@@ -46,6 +46,7 @@
       background-color: beige;
       width: 100%;
       height: auto;
+      cursor: pointer;
     }
     
     .ProjectSection_textContent {

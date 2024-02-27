@@ -1,11 +1,14 @@
 "use client"
 import React from 'react'
 import Stairs from "@/Animations/Stairs"
+import ContactUsHeader from "@/Components/ContactUs_Header/page"
+import ContactUsImage from "@/Components/ContactUs_Image/page"
 const Page = () => {
   return (
     <div>
       <Stairs>
-        <h1>Contact Us</h1>
+        <ContactUsHeader />
+        <ContactUsImage />
       </Stairs>
     </div>
   )

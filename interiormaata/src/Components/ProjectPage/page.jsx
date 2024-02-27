@@ -5,7 +5,7 @@ import styles from "@/Components/ProjectPage/projectPage.module.css"
 import projectsData from "./projectData"
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
-
+import { useRouter } from "next/navigation";
 const Projects = () => {
     const itemsPerPage = 4;
     const [projectName, setProjectName] = useState(0);
@@ -34,7 +34,7 @@ const Projects = () => {
     const lastIndex = pageNumber * itemsPerPage;
     const firstIndex = lastIndex - itemsPerPage;
     const displayedData = currentData?.slice(firstIndex, lastIndex);
-
+    const router = useRouter();
     return (
         <div ref={projectsRef}>
             <div className={styles.ProjectSection_header}>
@@ -87,7 +87,7 @@ const Projects = () => {
                                 className={styles.ProjectSection_image}
                                 src={data.image}
                                 alt={data.title}
-                                
+                                onClick={()=> router.push("/Single_Project_Layout")}
                             />
                         </div>
 
